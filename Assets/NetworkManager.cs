@@ -7,34 +7,10 @@ using Photon.Realtime;
 
 public class NetworkManager : MonoBehaviourPunCallbacks, IPunObservable
 {
-    // Start is called before the first frame update
-    public GameObject TitlePanel;
     public InputField IDInput;
-    void Awake()
-    {
-
-        Screen.SetResolution(960, 540, false);
-        PhotonNetwork.SendRate = 60;
-        PhotonNetwork.SerializationRate = 30;
-        Debug.Log("规汲沥");
-
-    }
-
-    public void Connect()
-    {
-        PhotonNetwork.ConnectUsingSettings();
-        Debug.Log("楷搬");
-    }
-    public override void OnConnectedToMaster()
-    {
-        PhotonNetwork.LocalPlayer.NickName = IDInput.text;
-        PhotonNetwork.JoinOrCreateRoom("Room", new RoomOptions { MaxPlayers = 5 }, null);
-        Debug.Log("规积己");
-
-    }
+  
     public override void OnJoinedRoom()
     {
-        TitlePanel.SetActive(false);
         Spawn();
     }
     // Update is called once per frame
