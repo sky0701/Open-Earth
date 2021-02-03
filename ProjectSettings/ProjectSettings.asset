@@ -147,6 +147,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
     Android: com.DefaultCompany.Test123
+    Standalone: com.DefaultCompany.Test123
   buildNumber:
     Standalone: 0
     iPhone: 0
