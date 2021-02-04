@@ -1,9 +1,9 @@
 {
   "project_info": {
     "project_number": "391987835173",
+    "firebase_url": "https://test-c8acd-default-rtdb.firebaseio.com",
     "project_id": "test-c8acd",
-    "storage_bucket": "test-c8acd.appspot.com",
-    "firebase_url": "https://test-c8acd-default-rtdb.firebaseio.com/"
+    "storage_bucket": "test-c8acd.appspot.com"
   },
   "client": [
     {
